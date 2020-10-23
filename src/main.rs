@@ -1,7 +1,7 @@
 fn main() {
     let cc = vec![4, 0, 0, 3, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4];
 
-    let check_sum = get_every_other_digit(cc);
+    let check_sum = check_sum(cc);
     let is_valid = is_cc_valid(check_sum);
     println!("{}", is_valid);
     if is_valid == true {
@@ -19,7 +19,7 @@ fn is_cc_valid(sum: u32) -> bool {
     }
 }
 
-fn get_every_other_digit(cc: Vec<u32>) -> u32 {
+fn check_sum(cc: Vec<u32>) -> u32 {
     let mut cc_iter = cc.iter();
 
     //Split the vector into two vectors based on the instructions
