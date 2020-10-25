@@ -7,7 +7,6 @@ fn main() {
     let cc_type_validity = cc_type_check(&cc);
     let cc_type = cc_type(cc_type_validity);
     let cc_length = cc.len();
-
     println!("{}", cc_type);
     println!("{}", card_validity(&cc_length, &cc_type, &cc));
 }
@@ -91,8 +90,8 @@ fn cc_type_check(cc: &Vec<u32>) -> Option<String> {
 
 fn cc_type(cc_type: Option<String>) -> String {
     match cc_type {
-        Some(cc_type) => cc_type,
-        None => String::from(""),
+        Some(s) => s,
+        None => "".to_string(),
     }
 }
 
