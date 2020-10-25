@@ -101,7 +101,7 @@ fn card_validity(cc_length: &usize, cc_type: &String, cc: &Vec<u32>) -> String {
         (15, "American Express", true) => {
             String::from("This 15 digit American Express card is valid")
         }
-        (16, "Master Card", true) => String::from("This 16 digit Mastard Card is valid"),
+        (16, "Master Card", true) => String::from("This 16 digit Mastercard is valid"),
         (13, "Visa", true) => String::from("This 13 digit Visa is valid"),
         (16, "Visa", true) => String::from("This 16 digit Visa is valid"),
         _ => String::from("You have typed in an invalid card number"),
