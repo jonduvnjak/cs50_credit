@@ -45,8 +45,6 @@ fn cc_check_sum(cc: &Vec<u32>) -> bool {
     //take the product of split_complex and the product of simple together
     let total = split_complex + simple;
 
-    //https://cs50.harvard.edu/x/2020/psets/1/credit/
-
     let check_valid = is_check_sum_valid(total);
 
     check_valid
